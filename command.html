@@ -1,0 +1,87 @@
+<pre>Welcome to fish, the friendly interactive shell
+Type <font color="#00AA00">help</font> for instructions on how to use fish
+<font color="#55FF55">emon</font>@emon-HP-Laptop-15s-eq1xxx <font color="#00AA00">~</font>&gt; <font color="#005FD7">git</font> <font color="#00AFFF">clone</font> <font color="#00AFFF">git@github.com:emon4075/git_session_1.git</font>
+Cloning into &apos;git_session_1&apos;...
+warning: You appear to have cloned an empty repository.
+<font color="#55FF55">emon</font>@emon-HP-Laptop-15s-eq1xxx <font color="#00AA00">~</font>&gt; <font color="#005FD7">cd</font> <font color="#00AFFF"><u style="text-decoration-style:single">git_session_1/</u></font>
+<font color="#55FF55">emon</font>@emon-HP-Laptop-15s-eq1xxx <font color="#00AA00">~/git_session_1</font> (master)&gt; <font color="#005FD7">ls</font>
+<font color="#55FF55">emon</font>@emon-HP-Laptop-15s-eq1xxx <font color="#00AA00">~/git_session_1</font> (master)&gt; <font color="#005FD7">ls</font> <font color="#00AFFF">-la</font>
+total 12
+drwxrwxr-x  3 emon emon 4096 মার্চ     17 23:52 <font color="#0000AA"><b>.</b></font>
+drwxr-x--- 45 emon emon 4096 মার্চ     17 23:52 <font color="#0000AA"><b>..</b></font>
+drwxrwxr-x  7 emon emon 4096 মার্চ     17 23:52 <font color="#0000AA"><b>.git</b></font>
+<font color="#55FF55">emon</font>@emon-HP-Laptop-15s-eq1xxx <font color="#00AA00">~/git_session_1</font> (master)&gt; <font color="#005FD7">nvim</font> <font color="#00AFFF">Hello.cpp</font>
+<font color="#55FF55">emon</font>@emon-HP-Laptop-15s-eq1xxx <font color="#00AA00">~/git_session_1</font> (master)&gt; <font color="#005FD7">ls</font>
+Hello.cpp
+<font color="#55FF55">emon</font>@emon-HP-Laptop-15s-eq1xxx <font color="#00AA00">~/git_session_1</font> (master)&gt; <font color="#005FD7">git</font> <font color="#00AFFF">status</font>
+On branch master
+
+No commits yet
+
+Untracked files:
+  (use &quot;git add &lt;file&gt;...&quot; to include in what will be committed)
+	<font color="#AA0000">Hello.cpp</font>
+
+nothing added to commit but untracked files present (use &quot;git add&quot; to track)
+<font color="#55FF55">emon</font>@emon-HP-Laptop-15s-eq1xxx <font color="#00AA00">~/git_session_1</font> (master)&gt; <font color="#005FD7">git</font> <font color="#00AFFF">add</font> <font color="#00AFFF">--all</font>
+<font color="#55FF55">emon</font>@emon-HP-Laptop-15s-eq1xxx <font color="#00AA00">~/git_session_1</font> (master)&gt; <font color="#005FD7">git</font> <font color="#00AFFF">status</font>
+On branch master
+
+No commits yet
+
+Changes to be committed:
+  (use &quot;git rm --cached &lt;file&gt;...&quot; to unstage)
+	<font color="#00AA00">new file:   Hello.cpp</font>
+
+<font color="#55FF55">emon</font>@emon-HP-Laptop-15s-eq1xxx <font color="#00AA00">~/git_session_1</font> (master)&gt; <font color="#005FD7">git</font> <font color="#00AFFF">commit</font>
+[master (root-commit) 44bcbcc] First CPP File
+ 1 file changed, 7 insertions(+)
+ create mode 100644 Hello.cpp
+<font color="#55FF55">emon</font>@emon-HP-Laptop-15s-eq1xxx <font color="#00AA00">~/git_session_1</font> (master)&gt; <font color="#005FD7">git</font> <font color="#00AFFF">status</font>
+On branch master
+Your branch is based on &apos;origin/master&apos;, but the upstream is gone.
+  (use &quot;git branch --unset-upstream&quot; to fixup)
+
+nothing to commit, working tree clean
+<font color="#55FF55">emon</font>@emon-HP-Laptop-15s-eq1xxx <font color="#00AA00">~/git_session_1</font> (master)&gt; <font color="#005FD7">git</font> <font color="#00AFFF">branch</font> 
+* <font color="#00AA00">master</font>
+<font color="#55FF55">emon</font>@emon-HP-Laptop-15s-eq1xxx <font color="#00AA00">~/git_session_1</font> (master)&gt; <font color="#005FD7">git</font> <font color="#00AFFF">push</font>
+Enumerating objects: 3, done.
+Counting objects: 100% (3/3), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (2/2), done.
+Writing objects: 100% (3/3), 314 bytes | 314.00 KiB/s, done.
+Total 3 (delta 0), reused 0 (delta 0), pack-reused 0
+To github.com:emon4075/git_session_1.git
+ * [new branch]      master -&gt; master
+<font color="#55FF55">emon</font>@emon-HP-Laptop-15s-eq1xxx <font color="#00AA00">~/git_session_1</font> (master)&gt; <font color="#005FD7">ls</font>
+Hello.cpp
+<font color="#55FF55">emon</font>@emon-HP-Laptop-15s-eq1xxx <font color="#00AA00">~/git_session_1</font> (master)&gt; <font color="#005FD7">g++</font> <font color="#00AFFF"><u style="text-decoration-style:single">Hello.cpp</u></font> 
+<font color="#55FF55">emon</font>@emon-HP-Laptop-15s-eq1xxx <font color="#00AA00">~/git_session_1</font> (master)&gt; <font color="#005FD7">ls</font>
+<font color="#00AA00"><b>a.out</b></font>  Hello.cpp
+<font color="#55FF55">emon</font>@emon-HP-Laptop-15s-eq1xxx <font color="#00AA00">~/git_session_1</font> (master)&gt; <font color="#005FD7">batcat</font> <font color="#00AFFF"><u style="text-decoration-style:single">a.out</u></font> 
+<font color="#444444">───────┬──────────────────────────────────────────────────────────────────────────────────────────────────────────────────</font>
+       <font color="#444444">│ </font>File: <b>a.out</b>   &lt;BINARY&gt;
+<font color="#444444">───────┴──────────────────────────────────────────────────────────────────────────────────────────────────────────────────</font>
+<font color="#55FF55">emon</font>@emon-HP-Laptop-15s-eq1xxx <font color="#00AA00">~/git_session_1</font> (master)&gt; <font color="#005FD7">git</font> <font color="#00AFFF">status</font>
+On branch master
+Your branch is up to date with &apos;origin/master&apos;.
+
+Untracked files:
+  (use &quot;git add &lt;file&gt;...&quot; to include in what will be committed)
+	<font color="#AA0000">a.out</font>
+
+nothing added to commit but untracked files present (use &quot;git add&quot; to track)
+<font color="#55FF55">emon</font>@emon-HP-Laptop-15s-eq1xxx <font color="#00AA00">~/git_session_1</font> (master)&gt; <font color="#005FD7">nvim</font> <font color="#00AFFF">.gitignore</font>
+<font color="#55FF55">emon</font>@emon-HP-Laptop-15s-eq1xxx <font color="#00AA00">~/git_session_1</font> (master)&gt; <font color="#005FD7">git</font> <font color="#00AFFF">status</font>
+On branch master
+Your branch is up to date with &apos;origin/master&apos;.
+
+Untracked files:
+  (use &quot;git add &lt;file&gt;...&quot; to include in what will be committed)
+	<font color="#AA0000">.gitignore</font>
+
+nothing added to commit but untracked files present (use &quot;git add&quot; to track)
+<font color="#55FF55">emon</font>@emon-HP-Laptop-15s-eq1xxx <font color="#00AA00">~/git_session_1</font> (master)&gt; 
+
+</pre>
